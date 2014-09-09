@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{3AE6760E-083A-4437-AF6F-EEE97B5D3B7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{812EA438-9033-4C44-B839-08000FAB8593}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{216CB1B1-136D-4F32-92C9-1EF68E6C9AF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D8395920-3166-43D2-A426-79A3C825961D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoWall.Domain", "Domain\PhotoWall.Domain\PhotoWall.Domain.csproj", "{F5D711F9-E05F-4051-95C0-51908DD097C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoWall.Dal", "DAL\PhotoWall.Dal\PhotoWall.Dal.csproj", "{27650B65-5A0A-4553-807A-1FBBE52D63F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoWall.Bll", "BLL\PhotoWall.Bll\PhotoWall.Bll.csproj", "{CF4331B2-44ED-499B-AB94-42F16286646E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoWall.UI.Web", "UI\PhotoWall.UI.Web\PhotoWall.UI.Web.csproj", "{B9587C67-5CD7-4C5D-93D3-AE388CF7F787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DDD9D3BE-3507-4A69-B8C0-28948B1D669B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Job", "Job", "{10D1F57C-D416-4B52-BF76-161A59C9E03C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoWall.Job.ReSize", "Job\PhotoWall.Job.ReSize\PhotoWall.Job.ReSize.csproj", "{84D11D69-52F3-4AB1-90FA-C71802941338}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5D711F9-E05F-4051-95C0-51908DD097C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D711F9-E05F-4051-95C0-51908DD097C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D711F9-E05F-4051-95C0-51908DD097C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D711F9-E05F-4051-95C0-51908DD097C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27650B65-5A0A-4553-807A-1FBBE52D63F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27650B65-5A0A-4553-807A-1FBBE52D63F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27650B65-5A0A-4553-807A-1FBBE52D63F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27650B65-5A0A-4553-807A-1FBBE52D63F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF4331B2-44ED-499B-AB94-42F16286646E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4331B2-44ED-499B-AB94-42F16286646E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4331B2-44ED-499B-AB94-42F16286646E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4331B2-44ED-499B-AB94-42F16286646E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9587C67-5CD7-4C5D-93D3-AE388CF7F787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9587C67-5CD7-4C5D-93D3-AE388CF7F787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9587C67-5CD7-4C5D-93D3-AE388CF7F787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9587C67-5CD7-4C5D-93D3-AE388CF7F787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D11D69-52F3-4AB1-90FA-C71802941338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D11D69-52F3-4AB1-90FA-C71802941338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D11D69-52F3-4AB1-90FA-C71802941338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D11D69-52F3-4AB1-90FA-C71802941338}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5D711F9-E05F-4051-95C0-51908DD097C1} = {D8395920-3166-43D2-A426-79A3C825961D}
+		{27650B65-5A0A-4553-807A-1FBBE52D63F6} = {812EA438-9033-4C44-B839-08000FAB8593}
+		{CF4331B2-44ED-499B-AB94-42F16286646E} = {216CB1B1-136D-4F32-92C9-1EF68E6C9AF9}
+		{B9587C67-5CD7-4C5D-93D3-AE388CF7F787} = {3AE6760E-083A-4437-AF6F-EEE97B5D3B7C}
+		{84D11D69-52F3-4AB1-90FA-C71802941338} = {10D1F57C-D416-4B52-BF76-161A59C9E03C}
+	EndGlobalSection
+EndGlobal

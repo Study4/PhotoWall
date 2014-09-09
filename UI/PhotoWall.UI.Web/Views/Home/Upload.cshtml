@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Scripts/angular-loading-bar/build/loading-bar.css" rel="stylesheet" />
+<link href="~/Scripts/angular-bootstrap-lightbox/angular-bootstrap-lightbox.css" rel="stylesheet" />
+
+<style scoped>
+    #gallery li {
+        display: inline-block;
+        margin: 0 1em 1em 0;
+        width: 150px;
+        list-style-type: none;
+        text-align: center;
+    }
+</style>
+
+
+
+<h2>TechDay PhotoWall Upload</h2>
+
+<div ng-app="photoWallApp" ng-controller="photoWallController">
+    <form>
+        上傳檔案? ( 只支援 jpg 格式 )
+        <input file-input="files" type=file multiple><br>
+        <button ng-click="upload()" ng-disabled="isUploadNow">上傳</button>
+    </form>
+    <ul id="gallery">
+        <li ng-repeat="photo in photos">
+            <a ng-click="openLightboxModal($index)">
+                <img ng-src="{{photo.thumbnailURL}}" class="img-thumbnail" alt="">
+            </a>
+        </li>
+    </ul>
+</div>
+
+@section Scripts{
+    <script src="~/Scripts/app/PhotoWall/photo-wall-app.js"></script>
+    <script src="~/Scripts/app/PhotoWall/Controllers/photo-wall-controller.js"></script>
+    <script src="~/Scripts/app/PhotoWall/Common/file-input.js"></script>
+    <script src="~/Scripts/app/PhotoWall/Services/photo-services.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="~/Scripts/angular-bootstrap-lightbox/angular-bootstrap-lightbox.js"></script>
+    <script src="~/Scripts/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="~/Scripts/angular-touch/angular-touch.js"></script>
+    <script src="~/Scripts/angular-signalr-hub.js"></script>
+}
